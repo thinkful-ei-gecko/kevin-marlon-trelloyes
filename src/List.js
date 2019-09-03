@@ -9,11 +9,7 @@ export default function List(props) {
         <h2>{props.header}</h2>
       </header>
       <div className="List-cards">
-        {
-          props.cards.forEach(card => {
-            return <Card />
-          })
-        }
+        
         <button type="button" className="List-add-button">
           + Add Random Card
         </button>
