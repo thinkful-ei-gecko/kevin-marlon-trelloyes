@@ -10,9 +10,9 @@ function App(props) {
       </header>
       <div className="App-list">
         {
-  
           props.store.lists.map(list => (
-            <List header={list.header} key={list.id} cards={list.cardIds.map(id => props.store.allCards[id])} />
+            <List header={list.header} key={list.id} 
+            cards={list.cardIds.map(id => props.store.allCards[id])} />
           ))
         }
       </div>
